@@ -120,6 +120,58 @@ li{
     }
     
     img {
+        width: 90%;
+        height: 90%;
+    }
+    
+    .card{
+        width: 140px;
+        height: 140px;
+    }
+    
+    .card_back, .card_front{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card_back{
+
+        font-size: 40px;
+    }
+
+    #gameBoard {
+        max-width: 700px;
+}
+
+    #scoreBoard{
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        max-width: 500px;
+        width: 500px;
+        height: auto;
+        margin-right: 15px;
+    }
+
+    ol{
+    width: 500px;
+    }
+
+    li{
+    float: left;
+    width: 250px;
+
+    }
+
+}
+
+@media screen and (max-width: 770px){
+    body{
+        height: 100vh;
+    }
+    
+    img {
         width: 70%;
         height: 70%;
     }
@@ -147,10 +199,11 @@ li{
         position: relative;
         top: 0;
         right: 0;
+        left: 0;
         max-width: 400px;
         width: 400px;
         height: auto;
-        margin-right: 0;
+        margin-right: 20px;
     }
 
     ol{
@@ -202,7 +255,7 @@ li{
     width: 350px;
     max-width: 350px;
     height: auto;
-    margin-right: 0;
+    margin-right: 15px;
 }
 
 ol{
@@ -249,10 +302,10 @@ width: 175px;
     #scoreBoard{
         position: relative;
         top: 0;
-        right: 0;
+        right: 0px;
         width: 280px;
         max-width: 280px;
-        margin-right: 0;
+        margin-right: 15px;
         height: auto;
 
     }
@@ -304,7 +357,7 @@ width: 175px;
         right: 0;
         width: 240px;
         max-width: 240px;
-        margin-right: 0;
+        margin-right: 15px;
         height: auto;
     }
 
@@ -318,5 +371,74 @@ width: 175px;
     font-size: 14px;
     }
 
+}
+
+
+@media screen and (max-width: 280px){
+    body{
+        height: 100vh;
+    }
+    
+    img {
+        width: 70%;
+        height: 70%;
+    }
+    
+    .card{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .card_back, .card_front{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.45);
+    }
+
+    .card_back{
+
+        font-size: 15px;
+    }
+
+    #gameBoard {
+        max-width: 700px;
+        gap: 13px;
+}
+
+    #scoreBoard{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 220px;
+        max-width: 220px;
+        margin-right: 17px;
+        height: auto;
+    }
+
+    ol{
+        font-size: 14px;
+        width: 220px;
+    }
+
+    li{
+    float: left;
+    width: 90px;
+    font-size: 14px;
+    }
+
+    #gameOver{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0, 0, 0, 0.9);
+        color: white;
+        font-size: 25px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 0;
+    }
 }
 
